@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* by Ethan Thompson
+
+  You should add some screen support for mobile users, etc 
+  It should look responsive enough
+*/
+@layer components {
+  .home-navbar {
+    @apply
+    /* Formatting */
+    mx-0 p-4 flex flex-wrap
+    /* Colors */
+    bg-gradient-to-r from-indigo-500 to-purple-800;
+  }
+
+  .home-title {
+    /* Typography */
+    @apply prose-2xl;
+  }
+
+  .home-icon {
+    @apply w-1/2 h-1/2
+  }
+}

@@ -1,0 +1,6 @@
+version="0.3.2"
+
+[scripts]
+doc = "cargo doc --open"
+watch = "cargo leptos watch"
+css = "npx tailwind -i ./style/input.css -o ./style/output.css --watch"
