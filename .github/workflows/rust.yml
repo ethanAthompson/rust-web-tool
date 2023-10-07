@@ -1,6 +1,10 @@
 name: Rust
 
 on:
+
+  schedule:
+    # Runs 7:00 UTC Sunday via Saturday
+    - cron: "0 7 * * SUN-SAT"
   push:
     branches: [ "main" ]
   pull_request:
